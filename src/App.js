@@ -6,7 +6,9 @@ import UploadPage from './components/UploadPage';
 import BoardPage from './components/BoardPage';
 import ReportPage from './components/ReportPage';
 import Login from './components/Login';
+import KakaoCallback from './components/KakaoCallback';
 import MyPage from './components/MyPage';
+
 
 function App() {
   return (
@@ -20,14 +22,17 @@ function App() {
           <Route path="/upload" element={<UploadPage />} />
           <Route path="/board" element={<BoardPage />} />
           <Route path="/analysis" element={<ReportPage/>} />
-          <Route path="/login" element={<Login/>}/>
+          
           <Route path="/mypage" element={<MyPage />} />
+          <Route path="/login" element={<Login/>}/>
+          <Route path="/auth/callback/kakao" element={<KakaoCallback />} />
         </Routes>
       </main>
       <footer className="app-footer">
         <p>© 2025 전세가드. </p>
       </footer>
     </div>
+
   );
 
 }
