@@ -1,29 +1,14 @@
-// src/components/searchBar.jsx
+import '../styles/MainPage.css';
+import React from 'react';
+
 function SearchBar() {
     return (
-        <div style={{ margin: '20px 0'}}>
+        <div className="search-bar" style={{ margin: '20px 0'}}>
             <input
                 type = "text"
                 placeholder = "주소 또는 건물명 검색"
-                style={{
-                    // width: '100%',
-                    // padding: '10px',
-                    // borderRadius: '10px',
-                    // border: '1px solid #ccc',
-                    // fontSize: '16px'
-                }}
             />
-            <button style={{
-                // marginTop: '10px',
-                // padding: '10px 20px',
-                // backgroundColor: '#007BFF',
-                // color: '#fff',
-                // border: 'none',
-                // borderRadius: '5px',
-                // cursor: 'pointer'
-            }}>
-                검색
-            </button>
+            <button className="bg-blue-500 text-white px-4 py-2 rounded-lg">검색</button>
         </div>
     )
 }
